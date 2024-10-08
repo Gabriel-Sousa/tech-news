@@ -1,0 +1,55 @@
+header nav:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  padding-block: 1rem;
+}
+
+header nav:nth-child(1) a{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header nav:nth-child(1) a:hover svg path{
+  stroke:  var(--brand-color-light);
+  fill: var(--brand-color-light);
+}
+
+
+header nav:nth-child(1) a:nth-child(2){
+  font: var(--heading-1);
+  color: var(--brand-color-light);
+}
+
+header nav:nth-child(2){
+  border-top: 2px solid var(--stroke-color);
+  border-bottom: 2px solid var(--stroke-color);
+}
+
+header nav:nth-child(2) ul{
+  display: flex;
+  overflow: auto;
+  padding-block: 0.875rem;
+  scrollbar-width: none;
+  gap: 2rem;
+  color: var(--text-color-secondary);
+  font: var(--span);
+  
+}
+
+header nav:nth-child(2) ul li{
+  white-space: nowrap;
+}
+
+@media (width >= 76em) {
+  header nav:nth-child(1){
+    padding-block: 2rem;
+  }
+
+  header nav:nth-child(2) ul{
+    justify-content: space-between;
+    
+  }
+}

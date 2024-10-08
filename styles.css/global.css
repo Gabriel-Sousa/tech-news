@@ -14,6 +14,10 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+  color: var(--brand-color-light);
+}
+
 :root{
   --brand-color-light: #60A5FA;
   --brand-color-dark: #1D4ED8;
@@ -39,6 +43,10 @@ body{
   font: var(--paragraph);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+ul li{
+  list-style: none;
 }
 
 @media (width >= 76em) {
