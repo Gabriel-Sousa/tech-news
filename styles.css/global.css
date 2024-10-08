@@ -23,6 +23,7 @@ a:hover{
   --brand-color-dark: #1D4ED8;
 
   --bg-color: #0F172A;
+  --bg-color-linear: #020617 ;
   --stroke-color: #1E293B;
 
   --text-color-primary: #F1F5F9;
@@ -34,6 +35,7 @@ a:hover{
   --heading-2: 800 1rem/1.40 var(--ff-arch);
   --heading-3: 800 0.875rem/1.40 var(--ff-arch);
   --span: 600 0.875rem/1.45 var(--ff-arch);
+  --tag: 500 0.625rem/1.25 var(--ff-arch);
   --paragraph: 400 0.875rem/1.60 var(--ff-arch);
 
   --px-lg: 1rem;

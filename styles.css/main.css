@@ -1,0 +1,101 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-block: 2.5rem 5rem;
+
+}
+
+.card-main {
+  background: linear-gradient(180deg, transparent 0%, var(--bg-color-linear) 100%), url(../assets/Image\ 01.png) center / cover;  
+  background-size: cover;
+  background-position: right;
+  grid-column:  1/2;
+  grid-row:  1/3;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.5rem;
+  height: 26rem;
+
+}
+
+main div:not(.card-main){
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  height: 12.5rem;
+}
+
+main div:nth-child(2){
+  background: linear-gradient(180deg, transparent 0%, var(--bg-color-linear) 100%), url(../assets/Image\ 02.png) center / cover;  
+}
+
+main div:nth-child(3){
+  background: linear-gradient(180deg, transparent 0%, var(--bg-color-linear) 100%), url(../assets/Image\ 04.png) center / cover; 
+}
+
+main div:nth-child(4){
+  background: linear-gradient(180deg, transparent 0%, var(--bg-color-linear) 100%), url(../assets/Image\ 03.png) center / cover; 
+}
+
+main div:nth-child(5){
+  background: linear-gradient(180deg, transparent 0%, var(--bg-color-linear) 100%), url(../assets/Image\ 05.png) center / cover; 
+}
+
+main span {
+  border-radius: 0.25rem;
+  background: var(--brand-color-dark);
+  padding: 0.25rem 0.5rem;
+  font: var(--tag);
+  color: var(--text-color-primary);
+}
+
+
+
+main .card-main h2 {
+  font: var(--heading-1);
+  color: var(--text-color-primary);
+  height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+main :not(.card-main) h2 {
+  font: var(--heading-3);
+  color: var(--text-color-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+@media (width >= 76em) {
+  main {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  main .card-main{
+    padding: 1.5rem;
+  }
+
+  main div:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
