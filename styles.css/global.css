@@ -55,5 +55,12 @@ ul li{
   :root{
     --px-lg: 2rem;
   }
+}
 
+.tag{
+  padding: 0.25rem 0.5rem;
+  font: var(--tag);
+  color: var(--text-color-primary);
+  border-radius: 0.25rem;
+  background-color: var(--brand-color-dark);
 }

@@ -1,0 +1,85 @@
+.section-week {
+  border-top: 2px solid var(--stroke-color);
+}
+
+section div.container-text .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section div.container-text > div:nth-child(1){
+  padding-block: 0.75rem 1.5rem;
+  font: var(--span);
+  color: var(--text-secondary);
+}
+
+section div.container-text > div:nth-child(1) a{
+  display: flex;
+  align-items: center;
+  gap:  0.25rem;
+}
+
+section div.container-text > div:nth-child(1) a:hover{
+  color: var(--brand-color-light);
+}
+
+section div.container-text > div:nth-child(1) a:hover svg path{
+  stroke: var(--brand-color-light);
+  fill: var(--brand-color-light);
+}
+
+.cards-week{
+  display: grid;
+  gap: 2rem;
+}
+
+.cards-week p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font: var(--heading-2);
+  margin-top: 0.5rem;
+}
+
+.cards-week .card-week:nth-child(1) .bg-img-week{
+  height: 10rem;
+  background: url(../assets/Image\ 06.png) center/cover no-repeat;
+}
+
+.cards-week .card-week:nth-child(2) .bg-img-week{
+  height: 10rem;
+  background: url(../assets/Image\ 07.png) center/cover no-repeat;
+}
+
+.cards-week .card-week:nth-child(3) .bg-img-week{
+  height: 10rem;
+  background: url(../assets/Image\ 08.png) center/cover no-repeat;
+}
+
+.cards-week .card-week:nth-child(4) .bg-img-week{
+  height: 10rem;
+  background: url(../assets/Image\ 09.png) center/cover no-repeat;
+}
+
+.bg-img-week>div{
+  padding: 0.5rem;
+}
+
+.bg-img-week>div span{
+  padding: 0.25rem 0.5rem;
+  background-color: var(--brand-color-dark);
+  border-radius: 0.25rem;
+}
+
+
+
+@media (width >= 76em){
+  .cards-week{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
